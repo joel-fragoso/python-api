@@ -1,3 +1,4 @@
 from .domain import DomainException
 from .duplicated_category import DuplicatedCategoryException
 from .invalid_category import InvalidCategoryException
+from .invalid_uuidv4 import InvalidUuidv4Exception

@@ -2,3 +2,4 @@
 .pytest_cache
 .vscode/*
 !.vscode/settings.json
+.env
