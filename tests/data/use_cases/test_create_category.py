@@ -2,9 +2,9 @@ from faker import Faker
 from pytest import raises
 from src.data.use_cases import CreateCategoryUseCase
 from src.domain.repositories import CategoryRepositoryInterface
-from tests.data.mocks import CategoryRepositorySpy
 from src.domain.dtos import CreateCategoryDTO
 from src.domain.exceptions import DuplicatedCategoryException
+from tests.data.mocks import CategoryRepositorySpy
 
 faker = Faker("pt-BR")
 
