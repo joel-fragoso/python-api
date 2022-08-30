@@ -1,8 +1,8 @@
 from typing import Optional
-from src.domain.repositories import CategoryRepositoryInterface
-from src.domain.value_object import CategoryId, CategoryName
 from src.domain.entities import Category
-from src.domain.dtos import CreateCategoryDTO
+from src.domain.value_object import CategoryId, CategoryName
+from src.data.dtos import CreateCategoryDTO
+from src.data.repositories import CategoryRepositoryInterface
 
 
 class CategoryRepositorySpy(CategoryRepositoryInterface):

@@ -1,8 +1,8 @@
 from abc import ABCMeta, abstractmethod
 from typing import Optional
 from src.domain.entities import Category
-from src.domain.dtos import CreateCategoryDTO
 from src.domain.value_object import CategoryName
+from src.data.dtos import CreateCategoryDTO
 
 
 class CategoryRepositoryInterface(metaclass=ABCMeta):
