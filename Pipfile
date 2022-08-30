@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 sqlalchemy = "*"
+python-dotenv = "*"
+flask = "*"
 
 [dev-packages]
 pylint = "*"
@@ -18,4 +20,5 @@ pytest = "*"
 python_version = "3.8"
 
 [scripts]
+dev = "flask --app src.main.server --debug run --port 8000 --reload"
 test = "pytest -v -s"
