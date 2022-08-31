@@ -14,4 +14,4 @@ class FindCategoryByNameRepositorySpy(FindCategoryByNameRepositoryInterface):
     def find_by_name(self, category_name: CategoryName) -> Optional[Category]:
         if self.duplicated_name != category_name.value:
             return None
-        return Category(CategoryId(CategoryId.generate()), CategoryName(category_name))
+        return Category(CategoryId(CategoryId.generate()), category_name)

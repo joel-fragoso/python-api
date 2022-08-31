@@ -13,4 +13,4 @@ class TestCategoryId:
         category_id = "invalid_category_id"
         with raises(InvalidUuidv4Exception) as excinfo:
             CategoryId(category_id)
-        assert "O uuid é inválido" in (str(excinfo.value))
+        assert "O uuid é inválido" in str(excinfo.value)

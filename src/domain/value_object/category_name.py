@@ -1,7 +1,10 @@
+from src.domain.exceptions import InvalidCategoryException
+
+
 class CategoryName:
     def __init__(self, value: str) -> None:
-        # if len(value) < 3:
-        #     raise InvalidCategoryException()
+        if not value or len(value) > 45:
+            raise InvalidCategoryException()
         self.__value = value
 
     @property
